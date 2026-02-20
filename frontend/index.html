@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="6 Sigma Eğitim Kurumları — Elazığ'ın köklü eğitim kurumu. YKS ve LGS hazırlık, birebir koçluk ve özel ders imkânları.">
+    <title>6 Sigma Eğitim Kurumları | Elazığ</title>
+    <link rel="icon" type="image/png" href="assets/sigma_logo.png">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <!-- ================================================
+       HEADER
+  ================================================ -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-ici">
+                <a href="/" class="logo">
+                    <img src="assets/sigma_logo.png" alt="6 Sigma Eğitim Kurumları Logo">
+                </a>
+                <nav class="nav">
+                    <a href="/" class="aktif">Anasayfa</a>
+                    <a href="kurumsal">Kurumsal</a>
+                    <a href="kutuphane">Kütüphane</a>
+                    <a href="basarılar">Başarılar</a>
+                </nav>
+                <button class="hamburger" id="hamburger" aria-label="Menü">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobil Menü -->
+    <div class="mobil-menu" id="mobilMenu">
+        <a href="/" onclick="menuKapat()">Anasayfa</a>
+        <a href="kurumsal" onclick="menuKapat()">Kurumsal</a>
+        <a href="kutuphane" onclick="menuKapat()">Kütüphane</a>
+        <a href="basarılar" onclick="menuKapat()">Başarılar</a>
+    </div>
+
+    <!-- ================================================
+       HERO
+  ================================================ -->
+    <section class="hero">
+        <div class="hero-bg" id="heroBg"></div>
+        <div class="hero-overlay"></div>
+
+        <div class="hero-icerik fade-in">
+            <h1 class="hero-h1">
+                Zirveye Ulaşanların<br>
+                <span class="vurgu">Buluşma Noktası</span>
+            </h1>
+            <p class="hero-alt">
+                Elazığ'ın en köklü eğitim kurumunda, uzman kadromuz ve birebir koçluk sistemiyle
+                YKS ve LGS'de hedeflerinize birlikte ulaşalım.
+            </p>
+        </div>
+
+        <!-- Başarılı Öğrenci Kartları -->
+        <div class="ogrenci-kartlari">
+            <p class="ogrenci-kartlari-baslik">🎓 2025 YKS Başarılarımızdan</p>
+            <div class="ogrenci-marquee">
+                <div class="ogrenci-marquee-track" id="marqueeTrack">
+                    <!-- JS ile doldurulacak (iki kopya) -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================
+       ÜNİVERSİTE BANDI
+  ================================================ -->
+    <section class="uni-bandi">
+        <div class="container">
+            <div class="uni-bandi-icerik">
+                <p>ÖĞRENCİLERİMİZİN KAZANDIĞI ÜNİVERSİTELER</p>
+                <div class="uni-listesi">
+                    <span>ODTÜ</span>
+                    <span>BOĞAZİÇİ</span>
+                    <span>İTÜ</span>
+                    <span>HACETTEPE</span>
+                    <span>KOÇ</span>
+                    <span>BİLKENT</span>
+                    <span>ANKARA</span>
+                    <span>GAZI</span>
+                    <span>MARMARA</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================
+       PROGRAM KARTLARI
+  ================================================ -->
+    <section class="bolum" style="background: var(--renk-gri-acik);">
+        <div class="container">
+            <div class="bolum-baslik fade-in">
+                <span class="bolum-etiket">EĞİTİM PROGRAMLARIMIZ</span>
+                <h2 class="bolum-h2">Hangi Yoldasın?</h2>
+            </div>
+            <div class="programlar-grid fade-in">
+
+                <!-- Lise & YKS -->
+                <div class="program-kart">
+                    <div class="program-kart-bg"
+                        style="background-image: url('assets/kampus.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="program-kart-overlay"></div>
+                    <div class="program-kart-icerik">
+                        <span class="program-kart-etiket">9–12. Sınıf & Mezun</span>
+                        <h3 class="program-kart-baslik">Lise &amp; YKS<br>Hazırlık</h3>
+                        <p class="program-kart-aciklama">Üniversite hedefine ulaşmak için birebir koçluk ve uzman
+                            eğitim.</p>
+                        <a href="basarılar" class="program-kart-link">Başarılarımıza Bak →</a>
+                    </div>
+                </div>
+
+                <!-- Ortaokul & LGS -->
+                <div class="program-kart">
+                    <div class="program-kart-bg"
+                        style="background-image: url('assets/lise.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="program-kart-overlay"></div>
+                    <div class="program-kart-icerik">
+                        <span class="program-kart-etiket">5–8. Sınıf</span>
+                        <h3 class="program-kart-baslik">Ortaokul &amp; LGS<br>Hazırlık</h3>
+                        <p class="program-kart-aciklama">Fen lisesi ve güzel sanatlar hedefi için güçlü bir temel.</p>
+                        <a href="kurumsal" class="program-kart-link">Daha Fazla Bilgi →</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================
+       NEDEN SİGMA? (Bento Grid)
+  ================================================ -->
+    <section class="bolum">
+        <div class="container">
+            <div class="bolum-baslik fade-in">
+                <span class="bolum-etiket">SIGMA AYRICALIKLARI</span>
+                <h2 class="bolum-h2">Neden <span>Sigma'yı</span> Seçmelisiniz?</h2>
+            </div>
+            <div class="bento-grid fade-in">
+
+                <div class="bento-kart">
+                    <div class="bento-kart-ikon">🎯</div>
+                    <h3 class="bento-kart-baslik">Birebir Koçluk</h3>
+                    <p class="bento-kart-metin">Her öğrenciye özel akademik ve psikolojik destek. Hedefini belirle, yolu
+                        birlikte çizelim.</p>
+                </div>
+
+                <div class="bento-kart">
+                    <div class="bento-kart-ikon">📚</div>
+                    <h3 class="bento-kart-baslik">Özel Dersler</h3>
+                    <p class="bento-kart-metin">Bireysel ihtiyaca göre konu bazlı özel ders imkânı. Zayıf konuları güce
+                        dönüştür.</p>
+                </div>
+
+                <div class="bento-kart">
+                    <div class="bento-kart-ikon">🏆</div>
+                    <h3 class="bento-kart-baslik">Tecrübeli Kadro</h3>
+                    <p class="bento-kart-metin">10 yılı aşkın deneyimiyle uzman eğitmenlerimiz. Sınav sistemini en iyi
+                        bilen isimler.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================================================
+       CTA BÖLÜMÜ
+  ================================================ -->
+    <section class="cta-bolum">
+        <div class="container">
+            <h2 class="cta-h2">Başarıya Giden Yolda<br><span>İlk Adımı Atın.</span></h2>
+            <p class="cta-metin">
+                Deneme dersine katılmak veya kütüphanemizi gezmek ister misiniz? Çayımız hazır, sizi bekliyoruz.
+            </p>
+            <a href="tel:+905432674462" class="cta-tel">
+                📞 +90 543 267 44 62
+            </a>
+        </div>
+    </section>
+
+    <!-- ================================================
+       FOOTER
+  ================================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+
+                <!-- Sütun 1: Logo + Açıklama -->
+                <div>
+                    <img src="assets/sigma_logo.png" alt="6 Sigma Logo" class="footer-logo">
+                    <p class="footer-tanim">
+                        Elazığ'ın köklü eğitim kurumu olarak, öğrencilerimizi akademik başarıya
+                        ve parlak bir geleceğe hazırlıyoruz.
+                    </p>
+                    <div class="footer-sosyal">
+                        <a href="https://www.instagram.com/6sigmaegitim" class="sosyal-link" target="_blank"
+                            rel="noopener" aria-label="Instagram">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/6SigmaEgitimKurumlari" class="sosyal-link" target="_blank"
+                            rel="noopener" aria-label="Facebook">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/905432674462" class="sosyal-link" target="_blank" rel="noopener"
+                            aria-label="WhatsApp">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Sütun 2: İletişim -->
+                <div>
+                    <h4 class="footer-baslik">Bize Ulaşın</h4>
+                    <ul class="footer-iletisim">
+                        <li>
+                            <span>📍</span>
+                            <span>Ataşehir, Şelale Sk. No:29, 23040 Elazığ Merkez/Elazığ</span>
+                        </li>
+                        <li>
+                            <span>📞</span>
+                            <a href="tel:+905432674462" style="color:inherit;">+90 543 267 44 62</a>
+                        </li>
+                        <li>
+                            <span>📅</span>
+                            <span>Pazartesi – Cumartesi: 08:30 – 18:00</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Sütun 3: Harita -->
+                <div>
+                    <h4 class="footer-baslik">Konum</h4>
+                    <div class="footer-harita">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3115.2898173973076!2d39.177001000000004!3d38.665206999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4076c02139962f01%3A0x13e8d1077be750fb!2zNiBTxLBHTUEgRcSfaXRpbSBLdXJ1bWxhcsSx!5e0!3m2!1str!2str!4v1771593516055!5m2!1str!2str"
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                            title="6 Sigma Eğitim Kurumları Konum">
+                        </iframe>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-alt">
+                <span>© 2025 6 Sigma Eğitim Kurumları. Tüm hakları saklıdır.</span>
+                <div class="footer-alt-linkler">
+                    <a href="#">Gizlilik Politikası</a>
+                    <a href="#">Çerez Politikası</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js?v=2"></script>
+</body>
+
+</html>
