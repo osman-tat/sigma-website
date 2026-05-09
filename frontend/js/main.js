@@ -2,7 +2,7 @@
    6 Sigma — Ana JavaScript
    ================================================ */
 
-// ---- Header scroll efekti ----
+// ---- Header scroll efekti ---- 
 const header = document.getElementById('header');
 window.addEventListener('scroll', () => {
   if (window.scrollY > 60) {
@@ -12,7 +12,7 @@ window.addEventListener('scroll', () => {
   }
 });
 
-// ---- Hamburger Menü ----
+// ---- Hamburger Menü ---- deneme
 const hamburger = document.getElementById('hamburger');
 const mobilMenu = document.getElementById('mobilMenu');
 
