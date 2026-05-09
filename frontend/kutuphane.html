@@ -7,7 +7,7 @@
     <meta name="description"
         content="6 Sigma Eğitim Kurumları Kütüphane ve Etüt Odaları — Sessiz çalışma alanları, birebir etüt odaları.">
     <title>Kütüphane & Etüt Odaları | 6 Sigma Eğitim</title>
-    <link rel="icon" type="image/png" href="assets/sigma_logo.png">
+    <link rel="icon" type="image/png" href="assets/sigma_logo.png?v=1.1">
     <link rel="stylesheet" href="css/main.css">
     <style>
         .galeri-grid {
@@ -112,31 +112,11 @@
 
 <body>
 
-    <header class="header" id="header">
-        <div class="container">
-            <div class="header-ici">
-                <a href="/" class="logo">
-                    <img src="assets/sigma_logo.png" alt="6 Sigma Eğitim Kurumları">
-                </a>
-                <nav class="nav">
-                    <a href="/">Anasayfa</a>
-                    <a href="kurumsal">Kurumsal</a>
-                    <a href="kutuphane" class="aktif">Kütüphane</a>
-                    <a href="basarılar">Başarılar</a>
-                </nav>
-                <button class="hamburger" id="hamburger" aria-label="Menü">
-                    <span></span><span></span><span></span>
-                </button>
-            </div>
-        </div>
-    </header>
-
-    <div class="mobil-menu" id="mobilMenu">
-        <a href="/" onclick="menuKapat()">Anasayfa</a>
-        <a href="kurumsal" onclick="menuKapat()">Kurumsal</a>
-        <a href="kutuphane" onclick="menuKapat()">Kütüphane</a>
-        <a href="basarılar" onclick="menuKapat()">Başarılar</a>
-    </div>
+    <!-- ================================================
+       HEADER & MOBİL MENÜ (Merkezi JS'den yüklenir)
+  ================================================ -->
+    <div id="header-container"></div>
+    <script src="js/header.js"></script>
 
     <section class="iç-hero">
         <div class="container">
@@ -190,7 +170,7 @@
         <div class="container">
             <div class="bolum-baslik fade-in">
                 <span class="bolum-etiket">İMKÂNLAR</span>
-                <h2 class="bolum-h2">6Sigma'da <span>Neler Sunuyoruz?</span></h2>
+                <h2 class="bolum-h2">6 Sigma'da <span>Neler Sunuyoruz?</span></h2>
             </div>
             <div class="ozellik-listesi fade-in">
                 <div class="ozellik-satir">
@@ -240,7 +220,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div>
-                    <img src="assets/sigma_logo.png" alt="6 Sigma Logo" class="footer-logo">
+                    <img src="assets/sigma_logo.png?v=1.1" alt="6 Sigma Logo" class="footer-logo">
                     <p class="footer-tanim">Elazığ'ın köklü eğitim kurumu.</p>
                     <div class="footer-sosyal">
                         <a href="https://www.instagram.com/6sigmaegitim" class="sosyal-link" target="_blank"

@@ -7,7 +7,7 @@
     <meta name="description"
         content="6 Sigma Eğitim Kurumları 2025 YKS ve LGS başarıları — Tıp, Mühendislik ve daha fazlası.">
     <title>Başarılar | 6 Sigma Eğitim Kurumları</title>
-    <link rel="icon" type="image/png" href="assets/sigma_logo.png">
+    <link rel="icon" type="image/png" href="assets/sigma_logo.png?v=1.1">
     <link rel="stylesheet" href="css/main.css">
     <style>
         .filtre-bar {
@@ -152,37 +152,17 @@
 
 <body>
 
-    <header class="header" id="header">
-        <div class="container">
-            <div class="header-ici">
-                <a href="/" class="logo">
-                    <img src="assets/sigma_logo.png" alt="6 Sigma Eğitim Kurumları">
-                </a>
-                <nav class="nav">
-                    <a href="/">Anasayfa</a>
-                    <a href="kurumsal">Kurumsal</a>
-                    <a href="kutuphane">Kütüphane</a>
-                    <a href="basarılar" class="aktif">Başarılar</a>
-                </nav>
-                <button class="hamburger" id="hamburger" aria-label="Menü">
-                    <span></span><span></span><span></span>
-                </button>
-            </div>
-        </div>
-    </header>
-
-    <div class="mobil-menu" id="mobilMenu">
-        <a href="/" onclick="menuKapat()">Anasayfa</a>
-        <a href="kurumsal" onclick="menuKapat()">Kurumsal</a>
-        <a href="kutuphane" onclick="menuKapat()">Kütüphane</a>
-        <a href="basarılar" onclick="menuKapat()">Başarılar</a>
-    </div>
+    <!-- ================================================
+       HEADER & MOBİL MENÜ (Merkezi JS'den yüklenir)
+  ================================================ -->
+    <div id="header-container"></div>
+    <script src="js/header.js"></script>
 
     <section class="iç-hero">
         <div class="container">
             <span class="iç-hero-etiket">2025 YKS BAŞARILARI</span>
-            <h1>6Sigma'dan<br><span style="color: #ff8589;">Zirveye Çıkanlar</span></h1>
-            <p>Her isim, bir emek; her bölüm, bir hayal gerçeği. İşte başarı tableamız.</p>
+            <h1>6 Sigma'dan<br><span style="color: #ff8589;">Zirveye Çıkanlar</span></h1>
+            <p>Her isim, bir emek; her bölüm, bir hayal gerçeği. İşte başarı tablomuz.</p>
         </div>
     </section>
 
@@ -233,7 +213,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div>
-                    <img src="assets/sigma_logo.png" alt="6 Sigma Logo" class="footer-logo">
+                    <img src="assets/sigma_logo.png?v=1.1" alt="6 Sigma Logo" class="footer-logo">
                     <p class="footer-tanim">Elazığ'ın köklü eğitim kurumu.</p>
                     <div class="footer-sosyal">
                         <a href="https://www.instagram.com/6sigmaegitim" class="sosyal-link" target="_blank"

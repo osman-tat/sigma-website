@@ -7,43 +7,17 @@
     <meta name="description"
         content="6 Sigma Eğitim Kurumları — Elazığ'ın köklü eğitim kurumu. YKS ve LGS hazırlık, birebir koçluk ve özel ders imkânları.">
     <title>6 Sigma Eğitim Kurumları | Elazığ</title>
-    <link rel="icon" type="image/png" href="assets/sigma_logo.png">
+    <link rel="icon" type="image/png" href="assets/sigma_logo.png?v=1.1">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
 
     <!-- ================================================
-       HEADER
+       HEADER & MOBİL MENÜ (Merkezi JS'den yüklenir)
   ================================================ -->
-    <header class="header" id="header">
-        <div class="container">
-            <div class="header-ici">
-                <a href="/" class="logo">
-                    <img src="assets/sigma_logo.png" alt="6 Sigma Eğitim Kurumları Logo">
-                </a>
-                <nav class="nav">
-                    <a href="/" class="aktif">Anasayfa</a>
-                    <a href="kurumsal">Kurumsal</a>
-                    <a href="kutuphane">Kütüphane</a>
-                    <a href="basarılar">Başarılar</a>
-                </nav>
-                <button class="hamburger" id="hamburger" aria-label="Menü">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-        </div>
-    </header>
-
-    <!-- Mobil Menü -->
-    <div class="mobil-menu" id="mobilMenu">
-        <a href="/" onclick="menuKapat()">Anasayfa</a>
-        <a href="kurumsal" onclick="menuKapat()">Kurumsal</a>
-        <a href="kutuphane" onclick="menuKapat()">Kütüphane</a>
-        <a href="basarılar" onclick="menuKapat()">Başarılar</a>
-    </div>
+    <div id="header-container"></div>
+    <script src="js/header.js"></script>
 
     <!-- ================================================
        HERO
@@ -118,7 +92,7 @@
                         <h3 class="program-kart-baslik">Lise &amp; YKS<br>Hazırlık</h3>
                         <p class="program-kart-aciklama">Üniversite hedefine ulaşmak için birebir koçluk ve uzman
                             eğitim.</p>
-                        <a href="basarılar" class="program-kart-link">Başarılarımıza Bak →</a>
+                        <a href="lise-kurumsal" class="program-kart-link">Daha Fazla Bilgi →</a>
                     </div>
                 </div>
 
@@ -131,8 +105,10 @@
                     <div class="program-kart-icerik">
                         <span class="program-kart-etiket">5–8. Sınıf</span>
                         <h3 class="program-kart-baslik">Ortaokul &amp; LGS<br>Hazırlık</h3>
-                        <p class="program-kart-aciklama">Fen lisesi ve güzel sanatlar hedefi için güçlü bir temel.</p>
-                        <a href="kurumsal" class="program-kart-link">Daha Fazla Bilgi →</a>
+                        <p class="program-kart-aciklama">Fen lisesi ve nitelikli lise hedefine ulaşmak için birebir
+                            koçluk ve uzman eğitim.
+                        </p>
+                        <a href="ortaokul-kurumsal" class="program-kart-link">Daha Fazla Bilgi →</a>
                     </div>
                 </div>
 
@@ -146,21 +122,20 @@
     <section class="bolum">
         <div class="container">
             <div class="bolum-baslik fade-in">
-                <span class="bolum-etiket">6SIGMA AYRICALIKLARI</span>
-                <h2 class="bolum-h2">Neden <span>6Sigma'yı</span> Seçmelisiniz?</h2>
+                <span class="bolum-etiket">6 SİGMA AYRICALIKLARI</span>
+                <h2 class="bolum-h2">Neden <span>6 Sigma'yı</span> Seçmelisiniz?</h2>
             </div>
             <div class="bento-grid fade-in">
 
                 <div class="bento-kart">
-                    <div class="bento-kart-ikon">🎯</div>
-                    <h3 class="bento-kart-baslik">Birebir Koçluk</h3>
-                    <p class="bento-kart-metin">Her öğrenciye özel akademik ve psikolojik destek. Hedefini belirle, yolu
-                        birlikte çizelim.</p>
+                    <div class="bento-kart-ikon">🛡️</div>
+                    <h3 class="bento-kart-baslik">Disiplin</h3>
+                    <p class="bento-kart-metin">6 Sigma Eğitim Kurumları kurulduğu günden itibaren gösterdiği disiplin anlayışı sayesinde yıllardır zirvedeki yerini korumaktadır.</p>
                 </div>
 
                 <div class="bento-kart">
                     <div class="bento-kart-ikon">📚</div>
-                    <h3 class="bento-kart-baslik">Özel Dersler</h3>
+                    <h3 class="bento-kart-baslik">N-Özel Dersler</h3>
                     <p class="bento-kart-metin">Bireysel ihtiyaca göre konu bazlı özel ders imkânı. Zayıf konuları güce
                         dönüştür.</p>
                 </div>
@@ -168,8 +143,27 @@
                 <div class="bento-kart">
                     <div class="bento-kart-ikon">🏆</div>
                     <h3 class="bento-kart-baslik">Tecrübeli Kadro</h3>
-                    <p class="bento-kart-metin">10 yılı aşkın deneyimiyle uzman eğitmenlerimiz. Sınav sistemini en iyi
-                        bilen isimler.</p>
+                    <p class="bento-kart-metin">10 yılı aşkın deneyimiyle uzman eğitmenlerimiz.
+                    </p>
+                </div>
+
+                <div class="bento-kart">
+                    <div class="bento-kart-ikon">📋</div>
+                    <h3 class="bento-kart-baslik">N-Deneme</h3>
+                    <p class="bento-kart-metin">Çeşitli seçkin yayınlarda 60'dan fazla deneme sınavı deneyimi imkanı.</p>
+                </div>
+
+                <div class="bento-kart">
+                    <div class="bento-kart-ikon">✍️</div>
+                    <h3 class="bento-kart-baslik">Soru Çözümü</h3>
+                    <p class="bento-kart-metin">Haftanın her günü her branştan alanında uzman eğitmenlerimizle soru çözüm imkanı. Hafta içi 2 seans mezun ve örgün öğrencilere ayrı soru çözüm saatleri.</p>
+                </div>
+
+                <div class="bento-kart">
+                    <div class="bento-kart-ikon">🎯</div>
+                    <h3 class="bento-kart-baslik">Birebir Koçluk</h3>
+                    <p class="bento-kart-metin">Her öğrenciye özel akademik ve psikolojik destek. Hedefini belirle, yolu
+                        birlikte çizelim.</p>
                 </div>
 
             </div>
@@ -201,7 +195,7 @@
 
                 <!-- Sütun 1: Logo + Açıklama -->
                 <div>
-                    <img src="assets/sigma_logo.png" alt="6 Sigma Logo" class="footer-logo">
+                    <img src="assets/sigma_logo.png?v=1.1" alt="6 Sigma Logo" class="footer-logo">
                     <p class="footer-tanim">
                         Elazığ'ın köklü eğitim kurumu olarak, öğrencilerimizi akademik başarıya
                         ve parlak bir geleceğe hazırlıyoruz.

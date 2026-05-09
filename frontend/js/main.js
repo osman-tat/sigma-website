@@ -94,7 +94,7 @@ if (marqueeTrack) {
 }
 
 // ---- Aktif nav linki ----
-const nagivasyonLinkleri = document.querySelectorAll('.nav a');
+const nagivasyonLinkleri = document.querySelectorAll('.nav a, .mobil-menu a');
 const mevcutSayfa = window.location.pathname.split('/').pop() || 'index.html';
 nagivasyonLinkleri.forEach(link => {
   link.classList.remove('aktif');

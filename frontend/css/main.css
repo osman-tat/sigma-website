@@ -214,15 +214,18 @@ ul {
     gap: 2.5rem;
 }
 
-.nav a {
+.nav a,
+.nav .dropdown-toggle {
     color: rgba(255, 255, 255, 0.85);
     font-weight: 500;
     font-size: 0.95rem;
     position: relative;
     transition: color var(--gecis);
+    cursor: pointer;
 }
 
-.nav a::after {
+.nav a::after,
+.nav .dropdown-toggle::after {
     content: '';
     position: absolute;
     bottom: -4px;
@@ -234,13 +237,66 @@ ul {
 }
 
 .nav a:hover,
-.nav a.aktif {
+.nav a.aktif,
+.nav .dropdown-toggle:hover {
     color: var(--renk-beyaz);
 }
 
 .nav a:hover::after,
-.nav a.aktif::after {
+.nav a.aktif::after,
+.nav .dropdown-toggle:hover::after {
     width: 100%;
+}
+
+/* Dropdown Menü (Desktop) */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding: 1rem 0; /* Bridge hover gap */
+    margin: -1rem 0;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(15px);
+    min-width: 180px;
+    background: var(--renk-lacivert);
+    border-radius: var(--radius-md);
+    box-shadow: var(--golge-lg);
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--gecis);
+    padding: 0.75rem 0;
+    display: flex;
+    flex-direction: column;
+    pointer-events: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+    pointer-events: all;
+}
+
+.dropdown-menu a {
+    padding: 0.5rem 1.5rem;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.85);
+    transition: all var(--gecis);
+    white-space: nowrap;
+}
+
+.dropdown-menu a::after {
+    display: none;
+}
+
+.dropdown-menu a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--renk-beyaz);
+    padding-left: 1.75rem;
 }
 
 /* Hamburger */
@@ -300,11 +356,40 @@ ul {
     pointer-events: all;
 }
 
-.mobil-menu a {
+.mobil-menu a,
+.mobil-dropdown-toggle {
     color: var(--renk-beyaz);
     font-size: 1.75rem;
     font-weight: 700;
     letter-spacing: 0.02em;
+    cursor: pointer;
+}
+
+.mobil-dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.mobil-dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.mobil-dropdown-menu a {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 500;
+}
+
+.mobil-dropdown-menu a:hover {
+    color: var(--renk-kirmizi);
 }
 
 /* ================================================
@@ -581,7 +666,7 @@ ul {
 }
 
 .program-kart-icerik {
-    position: relative;
+    position: static;
     z-index: 2;
 }
 
@@ -625,6 +710,16 @@ ul {
 
 .program-kart-link:hover {
     gap: 0.75rem;
+}
+
+.program-kart-link::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
 }
 
 /* ================================================
