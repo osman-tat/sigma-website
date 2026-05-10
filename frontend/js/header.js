@@ -13,8 +13,8 @@ const headerHTML = `
                     <div class="dropdown">
                         <span class="dropdown-toggle">Kurumsal</span>
                         <div class="dropdown-menu">
-                            <a href="lise-kurumsal.html">Lise Grubu</a>
-                            <a href="ortaokul-kurumsal.html">Ortaokul Grubu</a>
+                            <a href="6-sigma-lise.html" class="dropdown-vurgulu">6 Sigma Lise</a>
+                            <a href="6-sigma-ortaokul.html" class="dropdown-vurgulu">6 Sigma Ortaokul</a>
                         </div>
                     </div>
                     <a href="kutuphane">Kütüphane</a>
@@ -35,8 +35,8 @@ const headerHTML = `
         <div class="mobil-dropdown">
             <span class="mobil-dropdown-toggle">Kurumsal</span>
             <div class="mobil-dropdown-menu">
-                <a href="lise-kurumsal.html" onclick="menuKapat()">Lise Grubu</a>
-                <a href="ortaokul-kurumsal.html" onclick="menuKapat()">Ortaokul Grubu</a>
+                <a href="6-sigma-lise.html" class="dropdown-vurgulu" onclick="menuKapat()">6 Sigma Lise</a>
+                <a href="6-sigma-ortaokul.html" class="dropdown-vurgulu" onclick="menuKapat()">6 Sigma Ortaokul</a>
             </div>
         </div>
         <a href="kutuphane" onclick="menuKapat()">Kütüphane</a>

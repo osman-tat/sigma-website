@@ -190,6 +190,10 @@ ul {
     padding: 1.25rem 0;
 }
 
+.header .container {
+    max-width: 1536px; /* Header'ı genel sayfa genişliğinden (1200px) daha geniş tutarak logoyu baya sola, menüyü baya sağa alır ve ferahlık katar */
+}
+
 .header.kaydirma {
     background: var(--renk-lacivert-3);
     box-shadow: var(--golge-md);
@@ -202,10 +206,17 @@ ul {
     justify-content: space-between;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 0; /* Genişletilmiş container sayesinde ekstra negatif margin'e gerek kalmadı */
+}
+
 .logo img {
     height: 52px;
     width: auto;
     object-fit: contain;
+    object-position: left center;
 }
 
 .nav {
@@ -287,6 +298,12 @@ ul {
     color: rgba(255, 255, 255, 0.85);
     transition: all var(--gecis);
     white-space: nowrap;
+}
+
+.dropdown-vurgulu {
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: var(--renk-beyaz) !important;
 }
 
 .dropdown-menu a::after {
