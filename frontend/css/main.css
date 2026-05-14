@@ -219,6 +219,26 @@ ul {
     object-position: left center;
 }
 
+.logo-yazi {
+    font-family: var(--font-ana);
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: var(--renk-beyaz);
+    letter-spacing: 1.5px;
+    max-width: 0;
+    opacity: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    margin-left: 0;
+}
+
+.header.kaydirma .logo-yazi {
+    max-width: 400px;
+    opacity: 1;
+    margin-left: 1rem;
+}
+
 .nav {
     display: flex;
     align-items: center;
